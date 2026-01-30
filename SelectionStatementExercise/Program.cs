@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
 
-            FavouriteNumberGame();
+            // FavouriteNumberGame();
+            FavouriteSubjectGame();
 
         }
         
@@ -55,6 +56,43 @@
             }while (!int.TryParse(Console.ReadLine().Trim(), out userInput));
             
             return userInput;
+        }
+
+        
+        // This function provides the Favourite Subect Game
+        static void FavouriteSubjectGame()
+        {
+            
+            string displayMessage;
+            
+            Console.WriteLine("What is your favorite school subject?");
+            Console.WriteLine("Math | Science | History | Music | English");
+            
+            string userInput = Console.ReadLine().Trim();
+
+            switch (userInput.ToLower())
+            {
+                case "math":
+                    displayMessage = "Math is cool because it's all about solving problems!";
+                    break;
+                case "science":
+                    displayMessage = "Great! Science is all about practical experiments!";
+                    break;
+                case "history":
+                    displayMessage = "Every time you study History, you unlock a mystery!";
+                    break;
+                case "music":
+                    displayMessage = "Music is memory, math, emotion, and rebellion all at once!";
+                    break;
+                case "english":
+                    displayMessage = "English gives you millions of stories, voices, and ideas—yours can be one of them!";
+                    break;
+                default:
+                    displayMessage = "Interesting choice! What do you like about it?";
+                    break;
+            }
+            Console.WriteLine(displayMessage);
+            
         }
         
     }
