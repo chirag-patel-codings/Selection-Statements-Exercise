@@ -75,19 +75,19 @@
                 case "math":
                     displayMessage = "Math is cool because it's all about solving problems!";
                     break;
-                case "science":
                 case "sci":
+                case "science":
                     displayMessage = "Great! Science is all about practical experiments!";
                     break;
-                case "history":
                 case "his":
+                case "history":
                     displayMessage = "Every time you study History, you unlock a mystery!";
                     break;
                 case "music":
                     displayMessage = "Music is memory, math, emotion, and rebellion all at once!";
                     break;
-                case "english":
                 case "eng":
+                case "english":
                     displayMessage = "English gives you millions of stories, voices, and ideas—yours can be one of them!";
                     break;
                 default:
