@@ -52,7 +52,7 @@
             
             do
             {
-                Console.Write("Please enter your guess in numeric only!\n");
+                Console.Write("Please enter your guess in whole (positive integers) numbers only!\n");
             }while (!int.TryParse(Console.ReadLine().Trim(), out userInput));
             
             return userInput;
